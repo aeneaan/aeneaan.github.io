@@ -17,6 +17,18 @@
         * {
             box-sizing: border-box;
         }
+
+        .iframe-container {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 700px;
+            height: 520px;
+            border: none;
+        }
     </style>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200&display=swap" rel="stylesheet">
@@ -32,6 +44,7 @@
 </div>
 
 <div class="main">
+
     <p class="inf "><img src="img/prs.png" width="300" height="150" class="rightimg">
         Спецыфіка сучаснага свету заключаецца ў тым, што ён мяняецца ўсё больш хуткімі тэмпамі. Змены ў грамадстве
         прыводзяць да змянення і ролі адукацыі. Зараз навучанне накіравана не на перадачу пэўнага аб'ёму ведаў і
@@ -56,24 +69,14 @@
 </div>
 
 <div class="test">
-    <button class="t ff fst"
-            onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSf6sAV-DLTSraC1KeMfap9F5_Mt2_hnjRh1ABshL7LtnhhdUw/viewform?pli=1';">
-        ГУЛЬНЯ 1
-    </button>
+    <button class="t ff fst" onclick="toggleForm(1)">ГУЛЬНЯ 1</button>
+    <button class="t ff" onclick="toggleForm(2)">ГУЛЬНЯ 2</button>
+    <button class="t ff" onclick="toggleForm(3)">ГУЛЬНЯ 3</button>
+    <button class="t ff mg" onclick="toggleForm(4)">ГУЛЬНЯ 4</button>
+</div>
 
-    <button class="t ff"
-            onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeuB77q6mWOgiDkJsp7rixFXAq138sKopCg2qQsl9mcy-6IhQ/viewform';">
-        ГУЛЬНЯ 2
-    </button>
-
-    <button class="t ff"
-            onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScO9qlLkHb776pmRRrBIjo-E6xl6KnjuIsOPC-5fusWWv4EOw/viewform';">
-        ГУЛЬНЯ 3
-    </button>
-    <button class="t ff mg"
-            onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSf88odbdVFkRMuuFvRuIc2JY2ZDKAkRoH6EyoGXaXK1THuEZw/viewform';">
-        ГУЛЬНЯ 4
-    </button>
+<div class="iframe-container" id="iframe-container">
+    <!-- Сюда будет подставляться iframe -->
 </div>
 
 <div>
@@ -118,6 +121,34 @@
         expandImg.src = imgs.src;
         imgText.innerHTML = imgs.alt;
         expandImg.parentElement.style.display = "block";
+    }
+
+
+    // Ссылки на Google Forms
+    const formLinks = {
+        1: "https://docs.google.com/forms/d/e/1FAIpQLSf6sAV-DLTSraC1KeMfap9F5_Mt2_hnjRh1ABshL7LtnhhdUw/viewform?embedded=true",
+        2: "https://docs.google.com/forms/d/e/1FAIpQLSeuB77q6mWOgiDkJsp7rixFXAq138sKopCg2qQsl9mcy-6IhQ/viewform?embedded=true",
+        3: "https://docs.google.com/forms/d/e/1FAIpQLScO9qlLkHb776pmRRrBIjo-E6xl6KnjuIsOPC-5fusWWv4EOw/viewform?embedded=true",
+        4: "https://docs.google.com/forms/d/e/1FAIpQLSf88odbdVFkRMuuFvRuIc2JY2ZDKAkRoH6EyoGXaXK1THuEZw/viewform?embedded=true"
+    };
+
+    // Текущая открытая форма
+    let currentForm = null;
+
+    function toggleForm(formNumber) {
+        const iframeContainer = document.getElementById("iframe-container");
+
+        if (currentForm === formNumber) {
+            // Если нажата та же кнопка, скрыть форму
+            iframeContainer.style.display = "none";
+            iframeContainer.innerHTML = "";
+            currentForm = null;
+        } else {
+            // Показать новую форму
+            iframeContainer.innerHTML = `<iframe src="${formLinks[formNumber]}" loading="lazy"></iframe>`;
+            iframeContainer.style.display = "block";
+            currentForm = formNumber;
+        }
     }
 </script>
 <script src="/scripts/script.js"></script>
