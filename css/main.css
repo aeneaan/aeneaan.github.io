@@ -1,0 +1,444 @@
+
+.ff{font-family: 'Noto Serif Display', serif;}
+
+.header{border: 1px transparent solid;
+height: 200px;
+width: 100%;
+background: rgba(255, 191, 190, 0.3);
+display: flex;
+align-items: center;
+}
+a{text-decoration: none;
+color: black;}
+
+.logo{
+width: 70px;
+height: 120px;
+margin-left: 10px;
+margin-top: -40px;
+}
+.rightimg  {
+    float: right; 
+    margin: 7px 0 7px 7px; 
+   }
+    .leftimg {
+    float:left; 
+    margin: 7px 7px 7px 0; 
+   }
+
+.prs{
+	width: 50px;
+	height: 100px;
+}
+
+
+
+
+.txt1{
+	margin-left: 210px;
+	font-size:42px;
+	font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+.txt2{
+margin-top: 20px;
+margin-left: 170px;
+font-size: 20px;
+
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+.main{
+	margin-top: 40px;
+	border: 1px transparent solid;
+	width: 100%; 
+	height: 300px;
+display: flex;
+justify-content: space-around; ;
+
+}
+
+.inf{
+	border: 1px transparent  solid;
+	width: 550px;
+height: 300px;
+    font-family: 'Comfortaa', serif;
+font-weight: bold;
+
+font-size: 15px;
+}
+.prs{
+	height: 100px;
+	width: 50px;
+}
+
+
+.test{
+	border: 1px transparent solid ;
+	width: 92.9%;
+	height: 52px;
+	display: flex;
+	padding: 100px;
+	padding-left: 150px;
+	justify-content: space-around;
+}
+
+.t{
+border: 1px transparent solid ;
+width: 500px;
+height: 50px;
+background-color: transparent;
+font-size: 30px;
+font-weight: 900;
+
+}
+
+
+
+
+button { display: block; position: relative; }
+
+button:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 191, 190, 0.3);  opacity: 0; }
+
+button:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  opacity: 0; }
+
+button:hover:before,
+button:hover:after { opacity: 1; }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:  'Noto Serif Display', serif; ;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    position: relative;
+    display: none;
+    padding: 150px;
+    padding-top: 25px;
+}
+
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+h2{
+	margin-left: 500px;
+	margin-bottom: 50px;
+}
+
+.none{
+	width: 100%;
+	height: 750px;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+
+.txt1 {
+    margin-left: 200px;
+    font-size: 45px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+.txt2{
+margin-top: 20px;
+margin-left: 140px;
+font-size: 30px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 1440px) {
+
+.txt1 {
+    margin-left: 221px;
+    font-size: 39px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+.txt2{
+margin-top: 20px;
+margin-left: 115px;
+font-size: 22px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+.inf {
+    border: 1px transparent solid;
+    width: 550px;
+    height: 300px;
+    font-family: 'Comfortaa', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main {
+    margin-top: 40px;
+    border: 1px transparent solid;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 175px;
+}
+}
+
+
+/*.mg{
+	margin-left: 440px;
+	margin-top:30px;
+	margin-bottom: 70px;
+}*/
+
+@media screen and (max-width: 1270px) {
+
+.txt1 {
+    margin-left: 146px;
+    font-size: 42px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+}
+
+
+
+@media screen and (max-width: 1250px) {
+	.txt1 {
+    margin-left: 105px;
+    font-size: 42px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+}
+@media screen and (max-width: 1100px) {
+	.txt1 {
+    margin-left: 78px;
+    font-size: 40px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 1070px) {
+	.txt1 {
+    margin-left: 78px;
+    font-size: 37px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+.txt2{
+margin-top: 20px;
+margin-left: 128px;
+font-size: 22px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+	.txt1 {
+    margin-left: 68px;
+    font-size: 35px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+.txt2{
+margin-top: 20px;
+margin-left: 140px;
+font-size: 20px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+
+}
+
+@media screen and (max-width: 960px) {
+	.txt1 {
+    margin-left: 58px;
+    font-size: 35px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+.txt2{
+margin-top: 20px;
+margin-left: 90px;
+font-size: 22px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+
+}
+
+
+@media screen and (max-width: 910px) {
+	.txt1 {
+    margin-left: 68px;
+    font-size: 35px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 890px) {
+	.txt1 {
+    margin-left: 68px;
+    font-size: 32px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 830px) {
+	.txt1 {
+    margin-left: 68px;
+    font-size: 28px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+.txt2{
+margin-top: 20px;
+margin-left: 90px;
+font-size: 17px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+	.txt1 {
+    margin-left: 30px;
+    font-size: 28px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+.txt2{
+margin-top: 20px;
+margin-left: 65px;
+font-size: 17px;
+font-family: 'Noto Serif Display', serif;
+	font-weight: bold;
+}
+
+ .main {
+    margin-top: 40px;
+    border: 1px transparent solid;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 335px;
+}
+
+h2 {
+    margin-left: 175px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.t {
+    border: 1px transparent solid;
+    width: 500px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 18px;
+}
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+.header {
+    border: 1px transparent solid;
+    height: 200px;
+    width: 550px;
+    background: rgba(255, 191, 190, 0.3);
+    display: flex;
+    align-items: center;
+}
+.txt1 {
+    margin-left: 12px;
+    font-size: 20px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+<div class="txt1 ff">Навуковая работа
+ "Займальны калейдаскоп"<a href="http://gymn11.minsk.edu.by/">
+<div class="txt2 ff"  >Гимназия №11 г. Минска имени И. Д. Черняховского</div>
+</a>
+</div>
+}
+
+@font-face {
+  font-family: "Komsomol";
+  src: url("../fonts/RalewayRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
