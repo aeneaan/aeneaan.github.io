@@ -45,7 +45,7 @@
 
 <div class="main">
 
-    <p class="inf "><img src="img/prs.png" width="300" height="150" class="rightimg">
+    <p class="inf "><img src="img/img3.JPEG" width="250" height="150" class="rightimg">
         Спецыфіка сучаснага свету заключаецца ў тым, што ён мяняецца ўсё больш хуткімі тэмпамі. Змены ў грамадстве
         прыводзяць да змянення і ролі адукацыі. Зараз навучанне накіравана не на перадачу пэўнага аб'ёму ведаў і
         навыкаў, а на развіццё ключавых, агульнапрадметных (метапрадметных) і прадметных кампетэнцый.
@@ -57,7 +57,7 @@
         духоўна, мы павінны паклапаціцца аб фарміраванні самадастатковага і канкурэнтаздольнага маладога пакалення.
     </p>
 
-    <p class="inf "><img src="img/prs2.png" width="280" height="150" class="leftimg">
+    <p class="inf "><img src="img/img2.JPG" width="250" height="150" class="leftimg">
         Будучыня нашай мовы, як і нашай краіны, у руках сучаснай моладзі. Зараз нямногія маладыя людзі гавораць
         па-беларуску, чытаюць кнігі на роднай мове. Адзіны спосаб вырашыць праблему - зацікавіць моладзь. Менавіта гэта
         і з'яўляецца асновай мэтай маей навуковай работы. Вывучэнне літаратуразнаства можа дапамагчы ў гэты цяжкі час.
@@ -82,27 +82,21 @@
 <div>
 </div>
 
-<h2>Знешні выгляд настольных гульня?</h2>
+<h2>Знешні выгляд настольных гульняў</h2>
 <p></p>
 
 <div class="row">
     <div class="column">
-        <img src="img/img1.JPG" style="width:100%" onclick="myFunction(this);">
+        <img src="img/pic.jpg" style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-        <img src="img/img2.JPG" style="width:100%" onclick="myFunction(this);">
+        <img src="img/pic1.jpg"style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-        <img src="img/img3.JPEG" style="width:100%" onclick="myFunction(this);">
+        <img src="img/pic2.jpg"  style="width:100%" onclick="myFunction(this);">
     </div>
     <div class="column">
-        <img src="img/img4.JPEG" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-        <img src="img/img5.JPEG" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-        <img src="img/img6.JPEG" style="width:100%" onclick="myFunction(this);">
+        <img src="img/pic3.jpg"  style="width:100%" onclick="myFunction(this);">
     </div>
 </div>
 
@@ -110,6 +104,34 @@
     <span onclick="this.parentElement.style.display='none'" class="closebtn">?</span>
     <img id="expandedImg" style="width:100%">
     <div id="imgtext"></div>
+</div>
+
+
+<h2>Выступленні</h2>
+<p></p>
+<div class="row">
+    <div class="column">
+        <img src="img/img1.JPG" style="width:100%" onclick="myFunction1(this);">
+    </div>
+    <div class="column">
+        <img src="img/img4.JPEG" style="width:100%" onclick="myFunction1(this);">
+    </div>
+    <div class="column">
+        <img src="img/img5.JPEG"  style="width:100%" onclick="myFunction1(this);">
+    </div>
+    <div class="column">
+        <img src="img/img6.JPEG
+"  style="width:100%" onclick="myFunction1(this);">
+    </div>
+</div>
+
+
+<!--<div class="none"></div>-->
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">?</span>
+    <img id="expandedImg1" style="width:100%">
+    <div id="imgtext1"></div>
 </div>
 
 <div class="none"></div>
@@ -123,6 +145,13 @@
         expandImg.parentElement.style.display = "block";
     }
 
+    function myFunction1(imgs) {
+        var expandImg = document.getElementById("expandedImg1");
+        var imgText = document.getElementById("imgtext1");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
 
     // Ссылки на Google Forms
     const formLinks = {
